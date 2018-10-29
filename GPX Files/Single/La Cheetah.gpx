@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Ethanology" version="1.1"
+  xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2017-06-07T12:55:10.000Z</time>
+  </metadata>
+  <trk>
+    <name>La Cheetah</name>
+    <type>drinking</type>
+    <trkseg>
+	  <trkpt lat="55.859480" lon="-4.252281">
+        <name>La Cheetah</name>
+		<description>Regular club nights fill this lively venue with a range of music most Wednesdays to Saturdays.</description>
+		<extensions>
+        </extensions>
+      </trkpt>
+	  
+    </trkseg>
+  </trk>
+</gpx>

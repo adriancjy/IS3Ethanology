@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Ethanology" version="1.1"
+  xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2017-06-07T12:55:10.000Z</time>
+  </metadata>
+  <trk>
+    <name>The Brass Monkey</name>
+	<trkseg>
+      <trkpt lat="55.8638" lon="-4.2809">
+		<name>The Brass Monkey</name>
+		<desc>Lively pub offering a range of craft beers, wines and cocktails, plus regular TV sports.</desc>
+		<extensions>
+        </extensions>
+      </trkpt>
+	  </trkseg>
+  </trk>
+</gpx>

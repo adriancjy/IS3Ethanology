@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Ethanology" version="1.1"
+  xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2017-06-07T12:55:10.000Z</time>
+  </metadata>
+    <time>2017-06-07T12:55:10.000Z</time>
+  </metadata>
+  <trk>
+    <name>Variety Bar</name>
+	<trkseg>
+	    <trkpt lat="55.865897" lon="-4.268299">
+		<name>Variety Bar</name>
+		<desc>The Variety Bar offers a laid back and pleasant atmosphere for every occasion – ideal for pre-gig drinks, a quiet midweek pint or a big night out on the weekend.</desc>
+		<extensions>
+        </extensions>
+      </trkpt>=
+	  </trkseg>
+  </trk>
+</gpx>

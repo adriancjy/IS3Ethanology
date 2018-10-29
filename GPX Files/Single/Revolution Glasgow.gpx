@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Ethanology" version="1.1"
+  xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2017-06-07T12:55:10.000Z</time>
+  </metadata>
+  <trk>
+    <name>Revolution Glasgow</name>
+    <type>drinking</type>
+    <trkseg>
+      <trkpt lat="55.862932" lon="-4.256330">
+		<name>Revolution Glasgow</name>
+		<description>A stylish bar with a penchant for vodka, Revolution is a fun party venue for a night out in Glasgow.</description>
+        <extensions>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

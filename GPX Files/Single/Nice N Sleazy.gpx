@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Ethanology" version="1.1"
+  xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2017-06-07T12:55:10.000Z</time>
+  </metadata>
+    <time>2017-06-07T12:55:10.000Z</time>
+  </metadata>
+  <trk>
+    <name>Nice N Sleazy</name>
+	<trkseg>
+	     <trkpt lat="55.865983" lon="-4.268938">
+		<name>Nice N Sleazy</name>
+		<desc>Open 'til the early hours seven nights a week, Nice 'n' Sleazy is a Sauchiehall Street bar and club that caters to the weird and the wonderful among Glasgow's clubberatti.</desc>
+		<extensions>
+        </extensions>
+      </trkpt>
+	  </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Ethanology" version="1.1"
+  xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2017-06-07T12:55:10.000Z</time>
+  </metadata>
+  <trk>
+    <name>The Beer Cafe</name>
+	<trkseg>
+	    <trkpt lat="55.8587" lon="-4.2454">
+		<name>The Beer Cafe</name>
+		<desc>European-style bar with global drinks list, pie menu and live music, plus tables on historic square.</desc>
+		<extensions>
+        </extensions>
+      </trkpt>
+	  </trkseg>
+  </trk>
+</gpx>
