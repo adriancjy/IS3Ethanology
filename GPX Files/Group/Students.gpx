@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Ethanology" version="1.1"
+  xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2017-06-07T12:55:10.000Z</time>
+  </metadata>
+  <trk>
+    <name>Students</name>
+	<type>drinking</type>
+	<trkseg>
+      <trkpt lat="55.858227" lon="-4.244961">
+		<name>Distrikt </name>
+		<desc>Inside you’ll find an intimate venue, boasting a bar with the club’s name lit up in lights, a dark colour scheme undercut by green and red neon lights.</desc>
+        <extensions>
+		<rating>3.0</rating>
+        </extensions>
+      </trkpt>
+      <trkpt lat="55.8621" lon="-4.2485">
+		<name>The Ark</name>
+		<desc>Contemporary city centre pub over 2 floors with a large TV screen, pool table and large beer garden. </desc>
+		<extensions>
+		
+		<rating>4.1</rating>
+		<count>2</count>
+        </extensions>
+      </trkpt>
+	  </trkseg>
+  </trk>
+</gpx>
