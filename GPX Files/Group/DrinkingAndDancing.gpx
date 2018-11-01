@@ -12,6 +12,8 @@
 		<desc>Variety of rooms and bars with a huge main dance floor for raucous foam parties and live bands.</desc>
 		<extensions>
 		<rating>3.5</rating>
+    
+    <img>http://localhost/DrinkDance/Garage.png</img>
 		<count>1</count>
         </extensions>
       </trkpt>

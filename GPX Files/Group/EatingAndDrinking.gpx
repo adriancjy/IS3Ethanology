@@ -12,6 +12,7 @@
 		<desc>Promising to deliver "new tastes with old fashioned service", the latest Six°North venture will feature over 30 taps that flow with top brews.</desc>
         <extensions>
 		<rating>4.5</rating>
+    <img>http://localhost/EatDrink/SixDegreeNorth.png</img>
         </extensions>
       </trkpt>
       <trkpt lat="55.864956" lon="-4.275821">
@@ -19,6 +20,7 @@
 		<desc>Lively, stone-walled bar-restaurant serving authentic paella, tapas and other Spanish favourites.</desc>
         <extensions>
 		<rating>4.3</rating>
+    <img>http://localhost/EatDrink/Cubatas.png</img>
         </extensions>
       </trkpt>
       <trkpt lat="55.861810" lon="-4.254474">
@@ -26,6 +28,7 @@
 		<desc>Quirky chicken shop with a large variety of meaty dishes and a great selection of cocktails.</desc>
 		<extensions>
 		<rating>4.2</rating>
+    <img>http://localhost/EatDrink/AbsurdBird.png</img>
 		<count>3</count>
         </extensions>
       </trkpt>

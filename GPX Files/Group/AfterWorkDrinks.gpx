@@ -12,6 +12,7 @@
 		<desc>Lively, stone-walled bar-restaurant serving authentic paella, tapas and other Spanish favourites.</desc>
         <extensions>
 		<rating>4.1</rating>
+       <img>http://localhost/AfterWorkDrinks/HiltonGrosvenor.jpg</img>
         </extensions>
       </trkpt>
        <trkpt lat="55.865" lon="-4.2757">
@@ -19,6 +20,7 @@
 		<desc>Indian restaurant with a great selection of cocktails.</desc>
 		<extensions>
 		<rating>4.6</rating>
+       <img>http://localhost/AfterWorkDrinks/HornPlease.jpg</img>
         </extensions>
       </trkpt>
 	     <trkpt lat="55.8621" lon="-4.2531">
@@ -26,6 +28,7 @@
 		<desc>With 3 floors, 6 bars and 9 different areas, Waxy's is one of Glasgow's most unique bars. Enjoy great food, great service and live music in amazing surroundings!</desc>
         <extensions>
 		<rating>4.2</rating>
+       <img>http://localhost/AfterWorkDrinks/WaxyOConnor.jpg</img>
 		<count>3</count>
         </extensions>
       </trkpt>
