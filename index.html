@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUS8dqZbJLDz-QblsFM1U8_0_lp6DvgHc&callback=initMap" async defer></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="http://localhost/functions.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="styles.css">
 
+<link rel="stylesheet" type="text/css" href="http://localhost/styles.css">
+<link rel="icon" href="http://localhost/beer.ico">
 
 <div id="section1">
 <body>
-
 <div id="selectID">
     <select style="align:center;">
         <option value="" selected disabled hidden>===Select an option===</option>
@@ -19,9 +16,16 @@
       </select>
 	  </div>
 </div>
-<div id="map" style="float:left;"></div>
-<div id="imagePlace" style="float:right;"> hello</div>
+
+<div id="map"></div>
+<div id="imagePlace" ></div>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+</div>
 </body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUS8dqZbJLDz-QblsFM1U8_0_lp6DvgHc&callback=initMap" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://localhost/functions.js" type="text/javascript"></script>
 </html>
 
