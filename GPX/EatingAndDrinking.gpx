@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Ethanology" version="1.1"
+  xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2017-06-07T12:55:10.000Z</time>
+  </metadata>
+  <trk>
+    <name>Eating and Drinking</name>
+	<trkseg>
+	<trkpt lat="55.870793" lon="-4.315559">
+		<name>Six Degree North </name>
+		<desc>Promising to deliver "new tastes with old fashioned service", the latest Six°North venture will feature over 30 taps that flow with top brews.</desc>
+        <extensions>
+		<rating>4.5</rating>
+    <img>http://localhost/EatDrink/SixDegreeNorth.png</img>
+        </extensions>
+      </trkpt>
+      <trkpt lat="55.864956" lon="-4.275821">
+		<name>Cubatas </name>
+		<desc>Lively, stone-walled bar-restaurant serving authentic paella, tapas and other Spanish favourites.</desc>
+        <extensions>
+		<rating>4.3</rating>
+    <img>http://localhost/EatDrink/Cubatas.png</img>
+        </extensions>
+      </trkpt>
+      <trkpt lat="55.861810" lon="-4.254474">
+		<name>Absurd Bird Glasgow</name>
+		<desc>Quirky chicken shop with a large variety of meaty dishes and a great selection of cocktails.</desc>
+		<extensions>
+		<rating>4.2</rating>
+    <img>http://localhost/EatDrink/AbsurdBird.png</img>
+		<count>3</count>
+        </extensions>
+      </trkpt>
+	  </trkseg>
+  </trk>
+</gpx>
