@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Ethanology" version="1.1"
+  xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2017-06-07T12:55:10.000Z</time>
+  </metadata>
+  <trk>
+    <name>After Work Drinks</name>
+	<trkseg>
+      <trkpt lat="55.877938" lon="-4.291005">
+		<pname>Hilton Glasgow Grosvenor,</pname>
+		<desc>Lively stone-walled bar-restaurant serving authentic paella and tapas and other Spanish favourites./</desc>
+        <extensions>
+		<rating>4.1,</rating>
+       <img>http://localhost/AfterWorkDrinks/HiltonGrosvenor.jpg,</img>
+        </extensions>
+      </trkpt>
+       <trkpt lat="55.865" lon="-4.2757">
+		<pname>Horn Please,</pname>
+		<desc>Indian restaurant with a great selection of cocktails./</desc>
+		<extensions>
+		<rating>4.6,</rating>
+       <img>http://localhost/AfterWorkDrinks/HornPlease.jpg,</img>
+        </extensions>
+      </trkpt>
+	     <trkpt lat="55.8621" lon="-4.2531">
+		<pname>Waxy O'Connor's,</pname>
+		<desc>With 3 floors 6 bars and 9 different areas Waxy's is one of Glasgow's most unique bars. Enjoy great food, great service and live music in amazing surroundings!/</desc>
+        <extensions>
+		<rating>4.2,</rating>
+       <img>http://localhost/AfterWorkDrinks/WaxyOConnor.jpg,</img>
+		<count>3</count>
+        </extensions>
+      </trkpt>
+	  </trkseg>
+  </trk>
+</gpx>
+
