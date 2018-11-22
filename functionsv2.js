@@ -253,16 +253,16 @@ function initMap() {
 				  return function() {
 					  var r = Math.max(0, (Math.min(5, ratingArray[i])));
                           var z;
-                          var starRating;
+                          var starRating = "";
                           for (z = 0; z < r; z++){
                               starRating += "&#9733;";
                          }
 					  
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
-                              + "<span style='color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='color:#e9ce18; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
-                              + starRating + "</span><br>" // </div >"
+                              + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -395,16 +395,16 @@ function initMap() {
 				  return function() {
 					  var r = Math.max(0, (Math.min(5, ratingArray[i])));
                           var z;
-                          var starRating;
+                          var starRating = "";
                           for (z = 0; z < r; z++){
                               starRating += "&#9733;";
                          }
 					  
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
-                              + "<span style='color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='color:#e9ce18; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
-                              + starRating + "</span><br>" // </div >"
+                              + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -537,16 +537,16 @@ function initMap() {
 				  return function() {
 					  var r = Math.max(0, (Math.min(5, ratingArray[i])));
                           var z;
-                          var starRating;
+                          var starRating = "";
                           for (z = 0; z < r; z++){
                               starRating += "&#9733;";
                          }
 					  
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
-                              + "<span style='color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='color:#e9ce18; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
-                              + starRating + "</span><br>" // </div >"
+                              + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -679,16 +679,16 @@ function initMap() {
 				  return function() {
 					  var r = Math.max(0, (Math.min(5, ratingArray[i])));
                           var z;
-                          var starRating;
+                          var starRating = "";
                           for (z = 0; z < r; z++){
                               starRating += "&#9733;";
                          }
 					  
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
-                              + "<span style='color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='color:#e9ce18; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
-                              + starRating + "</span><br>" // </div >"
+                              + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -821,16 +821,16 @@ function initMap() {
 				  return function() {
 					  var r = Math.max(0, (Math.min(5, ratingArray[i])));
                           var z;
-                          var starRating;
+                          var starRating = "";
                           for (z = 0; z < r; z++){
                               starRating += "&#9733;";
                          }
 					  
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
-                              + "<span style='color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='color:#e9ce18; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
-                              + starRating + "</span><br>" // </div >"
+                              + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -963,16 +963,16 @@ function initMap() {
 				  return function() {
 					  var r = Math.max(0, (Math.min(5, ratingArray[i])));
                           var z;
-                          var starRating;
+                          var starRating = "";
                           for (z = 0; z < r; z++){
                               starRating += "&#9733;";
                          }
 					  
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
-                              + "<span style='color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='color:#e9ce18; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
-                              + starRating + "</span><br>" // </div >"
+                              + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -1106,16 +1106,16 @@ function initMap() {
 				  return function() {
 					  var r = Math.max(0, (Math.min(5, ratingArray[i])));
                           var z;
-                          var starRating;
+                          var starRating = "";
                           for (z = 0; z < r; z++){
                               starRating += "&#9733;";
                          }
 					  
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
-                              + "<span style='color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='color:#e9ce18; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
-                              + starRating + "</span><br>" // </div >"
+                              + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -1248,16 +1248,16 @@ function initMap() {
 				  return function() {
 					  var r = Math.max(0, (Math.min(5, ratingArray[i])));
                           var z;
-                          var starRating;
+                          var starRating = "";
                           for (z = 0; z < r; z++){
                               starRating += "&#9733;";
                          }
 					  
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
-                              + "<span style='color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='color:#e9ce18; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
-                              + starRating + "</span><br>" // </div >"
+                              + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -1395,16 +1395,16 @@ function initMap() {
 				  return function() {
 					  var r = Math.max(0, (Math.min(5, ratingArray[i])));
                           var z;
-                          var starRating;
+                          var starRating = "";
                           for (z = 0; z < r; z++){
                               starRating += "&#9733;";
                          }
 					  
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
-                              + "<span style='color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='color:#e9ce18; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
-                              + starRating + "</span><br>" // </div >"
+                              + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
