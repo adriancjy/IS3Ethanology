@@ -1,7 +1,7 @@
 	
-	var directionsDisplay = null;
+	var awdd, cdd, dddd, eddd, ftdd, lmdd, sbdd, scdd = null;
 	var map;
-	var markers = [], i;
+	var awmarkers = [], cmarkers = [],ddmarkers = [], edmarkers = [], ftmarkers = [], lmmarkers=[], sbmarkers = [], scmarkers = [],markers=[], i;
 	var currmarker;
 	var partyUrl = "FuntimeParty.gpx";
 	var studUrl = "Students.gpx";
@@ -13,7 +13,7 @@
 	var sbUrl = "SportsBar.gpx";
 	var cUrl = "ChillingWithMates.gpx";
 	var globalUrl;
-	var awC, cC, ddC, edC, ftC, lmC, sbC, sC;
+	var awC, cC, ddC, edC, ftC, lmC, sbC, sC = null;
 	var afterwork = document.getElementById("afterwork");
 	var chilling = document.getElementById('chilling');
 	var drinkdance = document.getElementById('drinkdance');
@@ -57,39 +57,63 @@ $(document).ready(function(){
 	function check(){
 		
 	
-	if(afterwork.checked == true && isNaN(awC)){
+	if(afterwork.checked == true && awC == null){
 		
 		afterworkM(awUrl);
 		awC = parseInt(1);
+	}else if(afterwork.checked == false && awC == 1){
+	deleteAWMarkers();
+	awC = null;
 	}
-	if(chilling.checked == true && isNaN(cC)){
+	if(chilling.checked == true && cC == null){
 		chillingM(cUrl);
 		cC = parseInt(1);
+	}else if(chilling.checked == false && cC == 1){
+	deleteCMarkers();
+	cC = null;
 	}
-	if(drinkdance.checked == true && isNaN(ddC)){
+	if(drinkdance.checked == true && ddC == null){
 		drinkdanceM(ddUrl);
 		ddC = parseInt(1);
+	}else if(drinkdance.checked == false && ddC == 1){
+	deleteDDMarkers();
+	ddC = null;
 	}
-	if(eatdrink.checked == true && isNaN(edC)){
+	if(eatdrink.checked == true && edC == null){
 		eatdrinkM(edUrl);
 			edC = parseInt(1);
+	}else if(eatdrink.checked == false && edC == 1){
+	deleteEDMarkers();
+	edC = null;
 	}
-	if(funtime.checked == true && isNaN(ftC)){
+	if(funtime.checked == true && ftC == null){
 		funtimeM(partyUrl);
 		ftC = parseInt(1);
+	}else if(funtime.checked == false && ftC == 1){
+	deleteFTMarkers();
+	ftC = null;
 	}
-	if(livemusic.checked == true && isNaN(lmC)){
+	if(livemusic.checked == true && lmC == null){
 		livemusicM(lmUrl);
 		lmC = parseInt(1);
+	}else if(livemusic.checked == false && lmC == 1){
+	deleteLMMarkers();
+	lmC = null;
 	}
-	if(sportsbar.checked == true && isNaN(sbC)){
+	if(sportsbar.checked == true && sbC == null){
 		sportsbarM(sbUrl);
 		sbC = parseInt(1);
+	}else if(sportsbar.checked == false && sbC == 1){
+	deleteSBMarkers();
+	sbC = null;
 	}
-	if(students.checked == true && isNaN(sC)){
+	if(students.checked == true && sC == null){
 		studentsM(studUrl);
 		sC = parseInt(1);
 		
+	}else if(students.checked == false && sC == 1){
+	deleteSCMarkers();
+	sC = null;
 	}
 	
 		
@@ -127,7 +151,7 @@ function initMap() {
 	
 //Setting gpx according to the select option
 	function afterworkM(URL){
-		console.log("in");
+		
         $.ajax({
 		  type: "GET",
 		  url: URL,
@@ -142,7 +166,7 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			console.log(rating);
+			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
@@ -199,12 +223,12 @@ function initMap() {
 
 			var directionsService = new google.maps.DirectionsService();
 
-			directionsDisplay = new google.maps.DirectionsRenderer({
+			awdd = new google.maps.DirectionsRenderer({
 						suppressMarkers: true,
 						suppressInfoWindows: true
 				   }); 
 
-			directionsDisplay.setMap(map);
+			awdd.setMap(map);
 			  var infowindow = new google.maps.InfoWindow();
 			var labels = '123456789';
 			var secondlabel = 'AW'
@@ -219,7 +243,8 @@ function initMap() {
 				  				  label: secondlabel + labels[labelIndex++ % labels.length],
 				  map: map
 				});
-				markers.push(marker);
+				awmarkers.push(marker);
+				
 				
 				var html;
 				
@@ -262,7 +287,7 @@ function initMap() {
 			  directionsService.route(request, function(result, status) {
 				if (status == google.maps.DirectionsStatus.OK) {
 					
-				  directionsDisplay.setDirections(result);
+				  awdd.setDirections(result);
 				  
 				}
 			  });
@@ -284,7 +309,7 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			console.log(rating);
+			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
@@ -341,12 +366,12 @@ function initMap() {
 
 			var directionsService = new google.maps.DirectionsService();
 
-			directionsDisplay = new google.maps.DirectionsRenderer({
+			cdd = new google.maps.DirectionsRenderer({
 						suppressMarkers: true,
 						suppressInfoWindows: true
 				   }); 
 
-			directionsDisplay.setMap(map);
+			cdd.setMap(map);
 			  var infowindow = new google.maps.InfoWindow();
 			var labels = '123456789';
 			var secondlabel = 'C'
@@ -361,7 +386,7 @@ function initMap() {
 				  				  label: secondlabel + labels[labelIndex++ % labels.length],
 				  map: map
 				});
-				markers.push(marker);
+				cmarkers.push(marker);
 				
 				var html;
 				
@@ -404,7 +429,7 @@ function initMap() {
 			  directionsService.route(request, function(result, status) {
 				if (status == google.maps.DirectionsStatus.OK) {
 					
-				  directionsDisplay.setDirections(result);
+				  cdd.setDirections(result);
 				  
 				}
 			  });
@@ -426,7 +451,7 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			console.log(rating);
+			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
@@ -483,12 +508,12 @@ function initMap() {
 
 			var directionsService = new google.maps.DirectionsService();
 
-			directionsDisplay = new google.maps.DirectionsRenderer({
+			dddd = new google.maps.DirectionsRenderer({
 						suppressMarkers: true,
 						suppressInfoWindows: true
 				   }); 
 
-			directionsDisplay.setMap(map);
+			dddd.setMap(map);
 			  var infowindow = new google.maps.InfoWindow();
 			var labels = '123456789';
 			var secondlabel = 'DD';
@@ -503,7 +528,7 @@ function initMap() {
 				  				  label: secondlabel + labels[labelIndex++ % labels.length],
 				  map: map
 				});
-				markers.push(marker);
+				ddmarkers.push(marker);
 				
 				var html;
 				
@@ -546,7 +571,7 @@ function initMap() {
 			  directionsService.route(request, function(result, status) {
 				if (status == google.maps.DirectionsStatus.OK) {
 					
-				  directionsDisplay.setDirections(result);
+				  dddd.setDirections(result);
 				  
 				}
 			  });
@@ -568,7 +593,7 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			console.log(rating);
+			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
@@ -625,12 +650,12 @@ function initMap() {
 
 			var directionsService = new google.maps.DirectionsService();
 
-			directionsDisplay = new google.maps.DirectionsRenderer({
+			eddd = new google.maps.DirectionsRenderer({
 						suppressMarkers: true,
 						suppressInfoWindows: true
 				   }); 
 
-			directionsDisplay.setMap(map);
+			eddd.setMap(map);
 			  var infowindow = new google.maps.InfoWindow();
 			var labels = '123456789';
 			var secondlabel = 'ED';
@@ -645,7 +670,7 @@ function initMap() {
 				  				  label: secondlabel + labels[labelIndex++ % labels.length],
 				  map: map
 				});
-				markers.push(marker);
+				edmarkers.push(marker);
 				
 				var html;
 				
@@ -688,7 +713,7 @@ function initMap() {
 			  directionsService.route(request, function(result, status) {
 				if (status == google.maps.DirectionsStatus.OK) {
 					
-				  directionsDisplay.setDirections(result);
+				  eddd.setDirections(result);
 				  
 				}
 			  });
@@ -710,7 +735,7 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			console.log(rating);
+			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
@@ -734,10 +759,7 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	console.log(nameArray);
-	console.log(imgArray);
-	console.log(descArray);
-	console.log(ratingArray);
+	
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -770,12 +792,12 @@ function initMap() {
 
 			var directionsService = new google.maps.DirectionsService();
 
-			directionsDisplay = new google.maps.DirectionsRenderer({
+			ftdd = new google.maps.DirectionsRenderer({
 						suppressMarkers: true,
 						suppressInfoWindows: true
 				   }); 
 
-			directionsDisplay.setMap(map);
+			ftdd.setMap(map);
 			  var infowindow = new google.maps.InfoWindow();
 			var labels = '123456789';
 			var secondlabel = 'FTP';
@@ -790,7 +812,7 @@ function initMap() {
 				  				  label: secondlabel + labels[labelIndex++ % labels.length],
 				  map: map
 				});
-				markers.push(marker);
+				ftmarkers.push(marker);
 				
 				var html;
 				
@@ -833,7 +855,7 @@ function initMap() {
 			  directionsService.route(request, function(result, status) {
 				if (status == google.maps.DirectionsStatus.OK) {
 					
-				  directionsDisplay.setDirections(result);
+				  ftdd.setDirections(result);
 				  
 				}
 			  });
@@ -855,7 +877,7 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			console.log(rating);
+			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
@@ -912,12 +934,12 @@ function initMap() {
 
 			var directionsService = new google.maps.DirectionsService();
 
-			directionsDisplay = new google.maps.DirectionsRenderer({
+			lmdd = new google.maps.DirectionsRenderer({
 						suppressMarkers: true,
 						suppressInfoWindows: true
 				   }); 
 
-			directionsDisplay.setMap(map);
+			lmdd.setMap(map);
 			  var infowindow = new google.maps.InfoWindow();
 			var labels = '123456789';
 			var secondlabel = 'LM';
@@ -932,7 +954,7 @@ function initMap() {
 				  				  label: secondlabel + labels[labelIndex++ % labels.length],
 				  map: map
 				});
-				markers.push(marker);
+				lmmarkers.push(marker);
 				
 				var html;
 				
@@ -975,7 +997,7 @@ function initMap() {
 			  directionsService.route(request, function(result, status) {
 				if (status == google.maps.DirectionsStatus.OK) {
 					
-				  directionsDisplay.setDirections(result);
+				  lmdd.setDirections(result);
 				  
 				}
 			  });
@@ -997,7 +1019,8 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			console.log(rating);
+			
+			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
@@ -1054,12 +1077,12 @@ function initMap() {
 
 			var directionsService = new google.maps.DirectionsService();
 
-			directionsDisplay = new google.maps.DirectionsRenderer({
+			sbdd = new google.maps.DirectionsRenderer({
 						suppressMarkers: true,
 						suppressInfoWindows: true
 				   }); 
 
-			directionsDisplay.setMap(map);
+			sbdd.setMap(map);
 			  var infowindow = new google.maps.InfoWindow();
 			var labels = '123456789';
 			var secondlabel = 'SB';
@@ -1074,7 +1097,7 @@ function initMap() {
 				  				  label: secondlabel + labels[labelIndex++ % labels.length],
 				  map: map
 				});
-				markers.push(marker);
+				sbmarkers.push(marker);
 				
 				var html;
 				
@@ -1117,7 +1140,7 @@ function initMap() {
 			  directionsService.route(request, function(result, status) {
 				if (status == google.maps.DirectionsStatus.OK) {
 					
-				  directionsDisplay.setDirections(result);
+				  sbdd.setDirections(result);
 				  
 				}
 			  });
@@ -1139,7 +1162,7 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			console.log(rating);
+			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
@@ -1196,12 +1219,12 @@ function initMap() {
 
 			var directionsService = new google.maps.DirectionsService();
 
-			directionsDisplay = new google.maps.DirectionsRenderer({
+			scdd = new google.maps.DirectionsRenderer({
 						suppressMarkers: true,
 						suppressInfoWindows: true
 				   }); 
 
-			directionsDisplay.setMap(map);
+			scdd.setMap(map);
 			  var infowindow = new google.maps.InfoWindow();
 			var labels = '123456789';
 			var secondlabel = 'ST';
@@ -1216,7 +1239,7 @@ function initMap() {
 				  				  label: secondlabel + labels[labelIndex++ % labels.length],
 				  map: map
 				});
-				markers.push(marker);
+				scmarkers.push(marker);
 				
 				var html;
 				
@@ -1259,7 +1282,7 @@ function initMap() {
 			  directionsService.route(request, function(result, status) {
 				if (status == google.maps.DirectionsStatus.OK) {
 					
-				  directionsDisplay.setDirections(result);
+				  scdd.setDirections(result);
 				  
 				}
 			  });
@@ -1283,7 +1306,7 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			console.log(rating);
+			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
@@ -1310,7 +1333,7 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	console.log(nameArray);
+	
 	
 
 			var latArr = [count+1];
@@ -1412,23 +1435,58 @@ function initMap() {
 		
 		
 //Set map = null
-		function setMapOnAll(map) {
+		function setMapOnAW(map) {
 
-				for (var i = 0; i < markers.length; i++) {
-				markers[i].setPosition(null);
+				for (var i = 0; i < awmarkers.length; i++) {
+				awmarkers[i].setPosition(null);
 				
-				  markers[i].setMap(map);
+				  awmarkers[i].setMap(map);
 				  
 				}
-				directionsDisplay.setMap(null);
-				directionsDisplay = null;
+				awdd.setMap(null);
+				awdd = null;
 				
 				
 			  }
 
 // Removes the markers from the map, but keeps them in the array.
-		function clearMarkers() {
-				setMapOnAll(null);
+		function clearAWMarkers() {
+				setMapOnAW(null);
+			  }
+			  
+			  function deleteAWMarkers() {
+				clearAWMarkers();
+				awmarkers = [];
+				console.log(awmarkers);
+				console.log(cmarkers);
+				
+			  }
+			  
+			  function setMapOnC(map) {
+
+				for (var i = 0; i < cmarkers.length; i++) {
+				cmarkers[i].setPosition(null);
+				
+				  cmarkers[i].setMap(map);
+				  
+				}
+				cdd.setMap(null);
+				cdd = null;
+				
+				
+			  }
+			  
+
+// Removes the markers from the map, but keeps them in the array.
+		function clearCMarkers() {
+				setMapOnC(null);
+			  }
+			  
+			   function deleteCMarkers() {
+				clearCMarkers();
+				cmarkers = [];
+				
+				
 			  }
 			  
 //Delete markers
@@ -1456,6 +1514,168 @@ function initMap() {
 				//markers = [];
 				
 			  }
+			  
+			  
+			  
+			  function setMapOnDD(map) {
+
+				for (var i = 0; i < ddmarkers.length; i++) {
+				ddmarkers[i].setPosition(null);
+				
+				  ddmarkers[i].setMap(map);
+				  
+				}
+				dddd.setMap(null);
+				dddd = null;
+				
+				
+			  }
+
+// Removes the markers from the map, but keeps them in the array.
+		function clearDDMarkers() {
+				setMapOnDD(null);
+			  }
+			  
+			  function deleteDDMarkers() {
+				clearDDMarkers();
+				ddmarkers = [];
+				
+				
+			  }
+			  
+			  function setMapOnED(map) {
+
+				for (var i = 0; i < edmarkers.length; i++) {
+				edmarkers[i].setPosition(null);
+				
+				  edmarkers[i].setMap(map);
+				  
+				}
+				eddd.setMap(null);
+				eddd = null;
+				
+				
+			  }
+
+// Removes the markers from the map, but keeps them in the array.
+		function clearEDMarkers() {
+				setMapOnED(null);
+			  }
+			  
+			  function deleteEDMarkers() {
+				clearEDMarkers();
+				edmarkers = [];
+				
+				
+			  }
+			  
+			  function setMapOnFT(map) {
+
+				for (var i = 0; i < ftmarkers.length; i++) {
+				ftmarkers[i].setPosition(null);
+				
+				  ftmarkers[i].setMap(map);
+				  
+				}
+				ftdd.setMap(null);
+				ftdd = null;
+				
+				
+			  }
+
+// Removes the markers from the map, but keeps them in the array.
+		function clearFTMarkers() {
+				setMapOnFT(null);
+			  }
+			  
+			  function deleteFTMarkers() {
+				clearFTMarkers();
+				ftmarkers = [];
+				
+				
+			  }
+			  
+			  function setMapOnLM(map) {
+
+				for (var i = 0; i < lmmarkers.length; i++) {
+				lmmarkers[i].setPosition(null);
+				
+				  lmmarkers[i].setMap(map);
+				  
+				}
+				lmdd.setMap(null);
+				lmdd = null;
+				
+				
+			  }
+
+// Removes the markers from the map, but keeps them in the array.
+		function clearLMMarkers() {
+				setMapOnLM(null);
+			  }
+			  
+			  function deleteLMMarkers() {
+				clearLMMarkers();
+				lmmarkers = [];
+				
+				
+			  }
+			  
+			  	  function setMapOnSB(map) {
+
+				for (var i = 0; i < sbmarkers.length; i++) {
+				sbmarkers[i].setPosition(null);
+				
+				  sbmarkers[i].setMap(map);
+				  
+				}
+				sbdd.setMap(null);
+				sbdd = null;
+				
+				
+			  }
+
+// Removes the markers from the map, but keeps them in the array.
+		function clearSBMarkers() {
+				setMapOnSB(null);
+			  }
+			  
+			  function deleteSBMarkers() {
+				clearSBMarkers();
+				sbmarkers = [];
+				
+				
+			  }
+			  
+			  	  function setMapOnSC(map) {
+
+				for (var i = 0; i < scmarkers.length; i++) {
+				scmarkers[i].setPosition(null);
+				
+				  scmarkers[i].setMap(map);
+				  
+				}
+				scdd.setMap(null);
+				scdd = null;
+				
+				
+			  }
+
+// Removes the markers from the map, but keeps them in the array.
+		function clearSCMarkers() {
+				setMapOnSC(null);
+			  }
+			  
+			  function deleteSCMarkers() {
+				clearSCMarkers();
+				scmarkers = [];
+				
+				
+			  }
+			  
+			  
+			  
+			  
 			  
 			  
 
