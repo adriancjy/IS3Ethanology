@@ -1492,14 +1492,14 @@ function initMap() {
 //Delete markers
 			  function deleteMarkers() {
 				//clearMarkers();
-				awC = undefined;
-				cC = undefined;
-				ddC = undefined;
-				edC = undefined;
-				ftC = undefined;
-				lvC = undefined;
-				sbC = undefined;
-				sC = undefined;
+				awC = null;
+				cC = null;
+				ddC = null;
+				edC = null;
+				ftC = null;
+				lvC = null;
+				sbC = null;
+				sC = null;
 				
 				
 				afterwork.checked = false;
@@ -1510,7 +1510,32 @@ function initMap() {
 				livemusic.checked = false;
 				sportsbar.checked = false;
 				students.checked = false;
-				initMap();
+				if(awmarkers.length != 0){
+				deleteAWMarkers();
+				}
+				if(cmarkers.length != 0){
+				deleteCMarkers();
+			  }
+			  if(ddmarkers.length != 0){
+				deleteDDMarkers();
+			  }
+			  if(edmarkers.length != 0){
+				deleteEDMarkers();
+			  }
+				if(ftmarkers.length != 0){
+				deleteFTMarkers();
+				}
+				if(lmmarkers.length != 0){
+				deleteLMMarkers();
+				}
+				if(sbmarkers.length != 0){
+				deleteSBMarkers();
+				}
+				if(scmarkers.length != 0){
+				deleteSCMarkers();
+				}
+				
+				
 				//markers = [];
 				
 			  }
