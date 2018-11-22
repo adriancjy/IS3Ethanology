@@ -13,7 +13,7 @@
 		<extensions>
 		<rating>3.5,</rating>
     
-    <img>http://localhost/DrinkDance/Garage.png,</img>
+    <img>DrinkDance/Garage.png,</img>
 		<count>1</count>
         </extensions>
       </trkpt>

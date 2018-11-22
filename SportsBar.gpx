@@ -14,7 +14,7 @@
         <extensions>
 		<rating>4.2,</rating>
     
-		<img>http://localhost/SportsBar/RecordFactory.jpg,</img>
+		<img>SportsBar/RecordFactory.jpg,</img>
         </extensions>
       </trkpt>
       <trkpt lat="55.8638" lon="-4.2809">
@@ -22,7 +22,7 @@
 		<desc>Lively pub offering a range of craft beers and wines and cocktails and plus regular TV sports./</desc>
 		<extensions>
 		<rating>4.0,</rating>
-    <img>http://localhost/SportsBar/BrassMonkey.jpg,</img>
+    <img>SportsBar/BrassMonkey.jpg,</img>
         </extensions>
       </trkpt>  
 	   <trkpt lat="55.8621" lon="-4.2531">
@@ -30,7 +30,7 @@
 		<desc>With 3 floors 6 bars and 9 different areas Waxy's is one of Glasgow's most unique bars. Enjoy great food and great service and live music in amazing surroundings!/</desc>
         <extensions>
 		<rating>4.2,</rating>
-     <img>http://localhost/SportsBar/WaxyOConnor.jpg,</img>
+     <img>SportsBar/WaxyOConnor.jpg,</img>
 		<count>3</count>
         </extensions>
       </trkpt>
