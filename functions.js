@@ -3,9 +3,9 @@
 	var map;
 	var markers = [], i;
 	var currmarker;
-	var partyUrl = "http://localhost/FuntimeParty.gpx";
-	var studUrl = "http://localhost/Students.gpx";
-	var businessUrl = "http://localhost/AfterWorkDrinks.gpx";
+	var partyUrl = "FuntimeParty.gpx";
+	var studUrl = "Students.gpx";
+	var businessUrl = "AWD.gpx";
 	var globalUrl;
 	
 //Document ready
@@ -71,7 +71,7 @@ function initMap() {
 			var points = [];
 			var bounds = new google.maps.LatLngBounds ();
 			var count = parseInt($(xml).find('count').text());
-			var name = $(xml).find('name').text();
+			var name = $(xml).find('pname').text();
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
@@ -96,7 +96,7 @@ function initMap() {
 		
 	}
 	nameArray.push("University of Glasgow");
-	imgArray.push("http://localhost/uog.jpg");
+	imgArray.push("uog.jpg");
 	descArray.push("Best school ever");
 	ratingArray.push("5.0");
 	console.log(imgArray);
