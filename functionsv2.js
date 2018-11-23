@@ -1478,7 +1478,7 @@ function initMap() {
 				setMapOnMap(null);
 			  }
 			  
-			  function deleteMarkers() {
+			  function deleteAllMarkers() {
 				clearMarkers();
 				markers = [];
 				
@@ -1557,7 +1557,7 @@ function initMap() {
 				deleteSCMarkers();
 				}
 				if(markers.length != 0){
-				deleteMarkers();
+				deleteAllMarkers();
 				}
 				
 				
