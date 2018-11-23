@@ -1493,6 +1493,23 @@ function initMap() {
 			  }
 			  
 //Delete markers
+  function setMapOnMap(map) {
+
+				for (var i = 0; i < markers.length; i++) {
+				markers[i].setPosition(null);
+				
+				  markers[i].setMap(map);
+				  
+				}
+				
+				
+				
+			  }
+
+// Removes the markers from the map, but keeps them in the array.
+		function clearMarkers() {
+				setMapOnMap(null);
+			  }
 			  function deleteMarkers() {
 				//clearMarkers();
 				awC = null;
@@ -1537,8 +1554,9 @@ function initMap() {
 				if(scmarkers.length != 0){
 				deleteSCMarkers();
 				}
-				
-				markers =[];
+				if(markers.length != 0){
+				clearMarkers();
+				}
 				//markers = [];
 				
 			  }
