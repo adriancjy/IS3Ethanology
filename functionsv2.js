@@ -26,32 +26,30 @@
 	
 //Document ready
 $(document).ready(function(){
-    
+    var modal = document.getElementById('intro');
 
-	$('select').change(function(){
-		
-		var value = $('select').val();
-		
-		if(markers.length != 0){
-		deleteMarkers();
-		}
-		if(value == 'party'){
-			globalUrl = partyUrl;
-		dynamicW(partyUrl);
-		}else if(value == 'stud'){
-			globalUrl = studUrl;
-		dynamicW(studUrl);
-		}else if(value == 'business'){
-			globalUrl = businessUrl;
-		dynamicW(businessUrl);
-		}
-		location.href = "#mapPlace";
-		
-	});
-	
-	
-	
+// Get the button that opens the modal
+var btn = document.getElementById("modalBtn");
 
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 	});
 	
 	function check(){
@@ -131,7 +129,6 @@ function initMap() {
 					  zoom: 14
 					  
 					});
-					
 					currmarker = new google.maps.Marker({
 					position: {lat: 55.8721, lng: -4.2882},
 					 draggable: true,
@@ -139,15 +136,73 @@ function initMap() {
 					map: map,
 					
 					});
-					currmarker.addListener('click', toggleBounce);
+					
+					
+					  var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        
+
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function() {
+          searchBox.setBounds(map.getBounds());
+        });
+
+        var markers = [];
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener('places_changed', function() {
+          var places = searchBox.getPlaces();
+
+          if (places.length == 0) {
+            return;
+          }
+
+          // Clear out the old markers.
+          markers.forEach(function(marker) {
+            marker.setMap(null);
+          });
+          markers = [];
+
+          // For each place, get the icon, name and location.
+          var bounds = new google.maps.LatLngBounds();
+          places.forEach(function(place) {
+            if (!place.geometry) {
+              console.log("Returned place contains no geometry");
+              return;
+            }
+            var icon = {
+              url: place.icon,
+              size: new google.maps.Size(71, 71),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(17, 34),
+              scaledSize: new google.maps.Size(25, 25)
+            };
+
+            // Create a marker for each place.
+            markers.push(new google.maps.Marker({
+              map: map,
+              icon: icon,
+              title: place.name,
+              position: place.geometry.location
+            }));
+
+            if (place.geometry.viewport) {
+              // Only geocodes have viewport.
+              bounds.union(place.geometry.viewport);
+            } else {
+              bounds.extend(place.geometry.location);
+            }
+          });
+          map.fitBounds(bounds);
+        });
+		
+					
+					
 				  }
-				  function toggleBounce() {
-				if (currmarker.getAnimation() !== null) {
-				currmarker.setAnimation(null);
-			  } else {
-				currmarker.setAnimation(google.maps.Animation.BOUNCE);
-			  }
-			}
+				  
+			  
+			
+			
 	
 //Setting gpx according to the select option
 	function afterworkM(URL){
