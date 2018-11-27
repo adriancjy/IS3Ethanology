@@ -273,12 +273,18 @@ input:checked + .slider:before {
 </div>
 <div id="mapPlace"></div>
 
-<button id="modalBtn">Click to introduce new place!</button>
+<div id="allBtn">
+<button id="modalBtn" class="btn btn-danger btn-cons">Click to introduce new place!</button>
+</div>
+<div id="modalarea">
 <div id="intro" class="modal" style="height:1000px">
 <div class="modal-content" style="text-align-last:center">
 <span class="close">&times;</span>
 <h3>Introduce us another place!</h3>
-<input style="text-align:center; align:center" id="pac-input" class="controls" type="text" placeholder="Search Box"><br>
+<div style="padding:5px;">
+<input style="text-align:center; align:center" id="pac-input" class="controls" type="text" placeholder="Search for a place"><br>
+</div>
+<div style="padding:5px;">
 <select style="text-align-last:center">
   <option value="afterworkS">After Work Drinks</option>
   <option value="chillingS">Chilling with mates</option>
@@ -288,8 +294,11 @@ input:checked + .slider:before {
   <option value="livemusicS">Live Music</option>
   <option value="sportsbarS">Sports Bar</option>
   <option value="studentsS">Students</option>
-</select><br>
-<textarea  rows="5" id="desc" placeholder="Describe the place to us!" style="text-align:center"></textarea>
+</select>
+</div>
+<div style="padding:5px;">
+<textarea style="overflow-y: scroll;" id="txtarea" rows="10" cols="100" id="desc" placeholder="Describe the place to us!" style="text-align:center"></textarea>
+</div>
 <br>
  <h5>Click to rate:</h5>
     <div class='starrr' id='star1'></div>
@@ -299,6 +308,7 @@ input:checked + .slider:before {
       </span>
     </div>
 	</div>
+</div>
 </div>
 </section>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
