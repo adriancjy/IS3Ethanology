@@ -23,6 +23,10 @@
 	var sportsbar = document.getElementById("sportsbar");
 	var students = document.getElementById('students');
 	var routeArr;
+	var siteWidth = 1280;
+	var scale = screen.width /siteWidth
+
+
 	
 //Document ready
 $(document).ready(function(){
@@ -33,7 +37,7 @@ var btn = document.getElementById("modalBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
