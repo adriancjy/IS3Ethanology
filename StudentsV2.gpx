@@ -13,14 +13,14 @@
 		<desc>Inside you’ll find an intimate venue, boasting a bar with the club’s name lit up in lights, a dark colour scheme undercut by green and red neon lights./</desc>
         <extensions>
 		<rating>3.0,</rating> 
-		<img>http://localhost/Students/Distrikt.png,</img>
+		<img>Students/Distrikt.png,</img>
         </extensions>
       </trkpt>
       <trkpt lat="55.8621" lon="-4.2485">
 		<pname>The Ark,</pname>
 		<desc>Contemporary city centre pub over 2 floors with a large TV screen, pool table and large beer garden./ </desc>
 		<extensions>    
-		<img>http://localhost/Students/Ark.png,</img>
+		<img>Students/Ark.png,</img>
 		<rating>4.1,</rating>
         </extensions>
       </trkpt>
@@ -30,7 +30,7 @@
 		<extensions>
 		<rating>4.2,</rating>
 		<count>3</count>
-    		<img>http://localhost/Students/VarietyBar.png,</img>
+    		<img>Students/VarietyBar.png,</img>
         </extensions>
       </trkpt>
 	  </trkseg>
