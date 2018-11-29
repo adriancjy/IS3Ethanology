@@ -11,6 +11,9 @@
 		<pname>Hilton Glasgow Grosvenor,</pname>
 		<desc>Lively stone-walled bar-restaurant serving authentic paella and tapas and other Spanish favourites./</desc>
         <extensions>
+
+        <linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww3.hilton.com%2Fen%2Fhotels%2Funited-kingdom%2Fhilton-glasgow-grosvenor-GLAGRHN%2Findex.html,</linkdesc> 
+
 		<rating>4.1,</rating>
        <img>AfterWorkDrinks/HiltonGrosvenor.jpg,</img>
         </extensions>
@@ -19,6 +22,9 @@
 		<pname>Horn Please,</pname>
 		<desc>Indian restaurant with a great selection of cocktails./</desc>
 		<extensions>
+
+         <linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhornpleaseglasgow.co.uk,</linkdesc>
+
 		<rating>4.6,</rating>
        <img>AfterWorkDrinks/HornPlease.jpg,</img>
         </extensions>
@@ -27,6 +33,8 @@
 		<pname>Waxy O'Connor's,</pname>
 		<desc>With 3 floors 6 bars and 9 different areas Waxy's is one of Glasgow's most unique bars. Enjoy great food, great service and live music in amazing surroundings!/</desc>
         <extensions>
+                <linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.waxyoconnors.co.uk,</linkdesc>
+
 		<rating>4.2,</rating>
        <img>AfterWorkDrinks/WaxyOConnor.jpg,</img>
 		<count>3</count>

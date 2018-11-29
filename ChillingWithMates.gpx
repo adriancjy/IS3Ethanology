@@ -13,7 +13,7 @@
 		<extensions>
 		<rating>4.5,</rating>
     
-       <img>ChillingWithMates/DogHouse.jpg,</img>
+       <img>http://localhost/ChillingWithMates/DogHouse.jpg,</img>
         </extensions>
       </trkpt>
       <trkpt lat="55.8587" lon="-4.242">
@@ -22,7 +22,7 @@
         <extensions>
 		<rating>4.4,</rating>
     
-       <img>ChillingWithMates/McChuills.jpg,</img>
+       <img>http://localhost/ChillingWithMates/McChuills.jpg,</img>
 		<count>2</count>
         </extensions>
       </trkpt>
