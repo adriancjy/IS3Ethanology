@@ -1,0 +1,166 @@
+
+
+
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #mapPlace {
+        height: 100%;
+		width:80%;
+		float:right;
+		
+      }
+	  
+	  #allBtn{
+		  padding:15px;
+	  }
+	  
+	  #modalarea{
+		  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+	  }
+	  #panel{
+		  
+		  width:20%;
+		  float: left;
+		  
+	  }
+	  #allBtn{
+		  text-align:center;
+	  }
+	  
+	  #checkboxDiv{
+			padding-left:40px;
+	  }
+	  
+	  #delBtn{
+		  text-align:center;
+		  padding:20px;
+	  }
+	  
+	  #selectID{
+		  padding-top: 500px;
+		 text-align:center;
+		 padding-right:750px;
+		 
+	  }
+	  select{
+		  height:30px;
+		  width:200px
+	  }
+	  
+	  h1{
+		  color:white;
+		  padding-top: 400px;
+		  text-align:center;
+	  }
+	
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	  
+	  body {
+	  background-color:#FFFFFF;
+	  }
+	  
+	  html {
+	scroll-behavior: smooth;
+	}
+	
+	
+	  
+	  #section1 {
+		height: 300px;
+		opacity : 0.6;
+		  background-image:url("newbg.jpg");
+		  background-size:cover;
+		
+	
+		  
+	  }
+	  
+	  #border {
+		  background-color:red;
+	  }
+	  
+	  
+	  #cbDiv {
+		  padding:10px;
+	  }
+	  
+	  
+	  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+#myBtn:hover {
+  background-color: #FFFFFF;
+  
+}
+.starrr {
+  display: inline-block; }
+  .starrr a {
+    font-size: 40px;
+    padding: 0 1px;
+    cursor: pointer;
+    color: #2a6496;
+    text-decoration: none; }
+	
+
+	.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pac-container {
+        z-index: 1051 !important;
+    }
+
+
+
+
+
