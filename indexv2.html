@@ -279,12 +279,12 @@ input:checked + .slider:before {
 <button id="modalBtn" class="btn btn-danger btn-cons">Click to introduce new place!</button>
 </div>
 <div id="modalarea">
-<div id="intro" class="modal" style="height:1000px">
-<div class="modal-content" style="text-align-last:center">
+<div id="intro" class="modal" style="height:400px;">
+<div class="modal-content" style="overflow-y: scroll; text-align-last:center">
 <span class="close">&times;</span>
 <h3>Introduce us another place!</h3>
 <div style="padding:5px;">
-<input style="text-align:center; align:center" id="pac-input" class="controls" type="text" placeholder="Search for a place"><br>
+<input style="text-align:center; align:center;" id="pac-input" class="controls" type="text" placeholder="Search for a place"><br>
 </div>
 <div style="padding:5px;">
 <select style="text-align-last:center">
@@ -298,17 +298,20 @@ input:checked + .slider:before {
   <option value="studentsS">Students</option>
 </select>
 </div>
-<div style="padding:5px;">
-<textarea style="overflow-y: scroll;" id="txtarea" rows="10" cols="100" id="desc" placeholder="Describe the place to us!" style="text-align:center"></textarea>
+<div style="padding-top:5px;">
+<textarea style="overflow-y: scroll;" id="txtarea" rows="10" cols="70" id="desc" placeholder="Describe the place to us!" style="text-align:center"></textarea>
 </div>
-<br>
  <h5>Click to rate:</h5>
     <div class='starrr' id='star1'></div>
     <div>&nbsp;
       <span class='your-choice-was' style='display: none;'>
         Your rating was <span class='choice'></span>.
       </span>
+      <div style="padding-top:5px;">
+          <button type="button" class="btn btn-danger btn-cons" onclick="">Submit</button>
+      </div>
     </div>
+    
 	</div>
 </div>
 </div>
