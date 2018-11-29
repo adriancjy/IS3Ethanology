@@ -30,6 +30,15 @@
 	
 //Document ready
 $(document).ready(function(){
+	
+				afterwork.checked = false;
+				chilling.checked = false;
+				drinkdance.checked = false;
+				eatdrink.checked = false;
+				funtime.checked = false;
+				livemusic.checked = false;
+				sportsbar.checked = false;
+				students.checked = false;
 			var errDesc = document.getElementById("err_description");
 		errDesc.hide;
 	$('#star1').starrr({
@@ -1254,6 +1263,7 @@ function initMap() {
 		imgArray[i] = imgrs[i];
 		descArray[i] = descrs[i];
 		ratingArray[i] = ratingrs[i];
+		console.log(nameArray);
 		
 	}
 	nameArray.unshift("University of Glasgow");
@@ -1855,6 +1865,8 @@ function updateGPX() {
 	studUrl = "StudentsV2.gpx";
 	var modal2 = document.getElementById('intro');
     modal2.style.display = "none";
+	
+
 
 	
     //var xhttp = new XMLHttpRequest();
