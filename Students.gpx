@@ -9,7 +9,7 @@
 	<type>drinking</type>
 	<trkseg>
       <trkpt lat="55.858227" lon="-4.244961">
-		<name>Distrikt,</name>
+		<pname>Distrikt,</pname>
 		<desc>Inside you’ll find an intimate venue, boasting a bar with the club’s name lit up in lights, a dark colour scheme undercut by green and red neon lights./</desc>
         <extensions>
 		<rating>3.0,</rating> 
@@ -17,7 +17,7 @@
         </extensions>
       </trkpt>
       <trkpt lat="55.8621" lon="-4.2485">
-		<name>The Ark,</name>
+		<pname>The Ark,</pname>
 		<desc>Contemporary city centre pub over 2 floors with a large TV screen, pool table and large beer garden./ </desc>
 		<extensions>    
 		<img>Students/Ark.png,</img>
