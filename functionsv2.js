@@ -30,6 +30,19 @@
 	
 //Document ready
 $(document).ready(function(){
+			var errDesc = document.getElementById("err_description");
+		errDesc.hide;
+	$('#star1').starrr({
+      change: function(e, value){
+        if (value) {
+          $('.your-choice-was').show();
+          $('.choice').text(value + '/5');
+        } else {
+          $('.your-choice-was').hide();
+        }
+      }
+    });
+	
     var modal = document.getElementById('intro');
 
 // Get the button that opens the modal
@@ -54,6 +67,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+  
 	});
 	
 	function check(){
@@ -320,7 +335,7 @@ function initMap() {
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -462,7 +477,7 @@ function initMap() {
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -604,7 +619,7 @@ function initMap() {
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -746,7 +761,7 @@ function initMap() {
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -888,7 +903,7 @@ function initMap() {
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1030,7 +1045,7 @@ function initMap() {
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1173,7 +1188,7 @@ function initMap() {
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1315,7 +1330,7 @@ function initMap() {
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1462,7 +1477,7 @@ function initMap() {
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
                               + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1782,27 +1797,86 @@ function initMap() {
 				
 			  }
 			  
+			  function updateGPX(){
+			  DOMParser = function() {}
+			  }
 			  
-			  
-			  
-			  
-			  
+function updateGPX() {
+    var gpxFile = document.getElementById("inputOptions").value;
+    var inputPlace = document.getElementById("pac-input").value;
+    var inputDescription = document.getElementById("inputDescription").value;
+    var inputRating = document.getElementById("starVal").value;
+	var name;
+	var url;
+	var xmlDoc;
+	if (inputPlace == "" && inputDescription == ""){
+		var errDesc = document.getElementById("err_description");
+		errDesc.innerHTML = "Please fill in the description.";
+		var errInput = document.getElementById("err_input");
+		errInput.innerHTML = "Please fill in the place.";
+		return;
+	}
+	if(inputPlace == ""){
+		var errInput = document.getElementById("err_input");
+		errInput.innerHTML = "Please fill in the place.";
+		return;
+	}
+	if(inputDescription == ""){
+		var errDesc = document.getElementById("err_description");
+		errDesc.innerHTML = "Please fill in the description.";
+		return;
+	}
+	
+	if(gpxFile == "afterworks"){
+		url = awUrl;
+	}
+	else if(gpxFile == "chillingS"){
+		url = cUrl;
+	}
+	else if (gpxFile == "drinkdanceS"){
+		url = ddUrl;
+	}
+	else if (gpxFile == "eatdrinkS"){
+		url = edUrl;
+	}
+	else if (gpxFile == "funtimeS"){
+		url = partyUrl;
+	}
+	else if (gpxFile == "livemusicS"){
+		url = lmUrl;
+	}
+	else if (gpxFile == "sportsbarS"){
+		url = sbUrl;
+	}
+	else if (gpxFile == "studentsS"){
+		url = studUrl;
+	}
+	
+	studUrl = "StudentsV2.gpx";
+	var modal2 = document.getElementById('intro');
+    modal2.style.display = "none";
 
-			
-				  
-				  window.onscroll = function() {scrollFunction()};
+	
+    //var xhttp = new XMLHttpRequest();
+    //xhttp.onreadystatechange = function () {
+		//if (this.readyState == 4 && this.status == 200) {
+        //xmlDoc = this.responseXML;
+		//var xmlDoc2 = $.parseXML(xmlDoc);
+		//var trkseg = xmlDoc.getElementsByTagName
+        //var c = parseInt(xmlDoc.getElementById("count"));
+        //xmlDoc.getElementById("count").innerHTML = ++c;
+		//var qq = xmlDoc.getElementsByTagName("count")[0];
+		//qq.nodeType = "9";
+		//qq.childNodes[0].nodeValue = 6;
+		//console.log(qq.childNodes[0].nodeValue);
+			//}
+    //};
+    //xhttp.open("GET", url, true);
+	
+	//xhttp.send();
+	 
+}
+        
 
-//detect how much user sc
-		function scrollFunction() {
-			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-				document.getElementById("myBtn").style.display = "block";
-			} else {
-				document.getElementById("myBtn").style.display = "none";
-			}
-		}
+			   
 
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}

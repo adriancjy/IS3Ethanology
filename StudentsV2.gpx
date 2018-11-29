@@ -20,9 +20,17 @@
 		<name>The Ark,</name>
 		<desc>Contemporary city centre pub over 2 floors with a large TV screen, pool table and large beer garden./ </desc>
 		<extensions>    
-		<count>3</count>
 		<img>http://localhost/Students/Ark.png,</img>
 		<rating>4.1,</rating>
+        </extensions>
+      </trkpt>
+         <trkpt lat="55.865976" lon="-4.268277">
+		<name>Variety Bar,</name>
+		<desc>Appropriately named, The Variety Bar on Sauchiehall Street draws in a mixed bag of punters, from ammateur musicians to clusters of students, to long standing regulars and the after-work pint tippers./ </desc>
+		<extensions>
+		<rating>4.2,</rating>
+		<count>3</count>
+    		<img>http://localhost/Students/VarietyBar.png,</img>
         </extensions>
       </trkpt>
 	  </trkseg>
