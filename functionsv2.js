@@ -346,7 +346,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#2a6496; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 						
@@ -503,7 +503,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#2a6496; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					infowindow.setContent(html);
@@ -657,7 +657,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#2a6496; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -811,7 +811,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#2a6496; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -965,7 +965,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#2a6496; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1119,7 +1119,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#2a6496; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1273,7 +1273,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#2a6496; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1426,7 +1426,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#2a6496; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1580,7 +1580,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#2a6496; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
