@@ -78,11 +78,9 @@
 	
 	  
 	  #section1 {
-		height: 52%;
+		height: 15%;
+		background-size:100%;
 		  background-image:url("newbg.jpg");
-		  background-size:cover;
-		  position: relative;
-		
 	
 		  
 	  }
