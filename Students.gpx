@@ -9,22 +9,24 @@
 	<type>drinking</type>
 	<trkseg>
       <trkpt lat="55.858227" lon="-4.244961">
-		<pname>Distrikt,</pname>
+		<name>Distrikt,</name>
 		<desc>Inside you’ll find an intimate venue, boasting a bar with the club’s name lit up in lights, a dark colour scheme undercut by green and red neon lights./</desc>
         <extensions>
 		<rating>3.0,</rating> 
-		<img>Students/Distrikt.png,</img>
+		<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdistriktglasgow.co.uk,</linkdesc>
+		<img>http://localhost/Students/Distrikt.png,</img>
         </extensions>
       </trkpt>
       <trkpt lat="55.8621" lon="-4.2485">
-		<pname>The Ark,</pname>
+		<name>The Ark,</name>
 		<desc>Contemporary city centre pub over 2 floors with a large TV screen, pool table and large beer garden./ </desc>
 		<extensions>    
-		<img>Students/Ark.png,</img>
+		<img>http://localhost/Students/Ark.png,</img>
+		<linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.social-squirrel.com%2Fthearkglasgow,</linkdesc>
 		<rating>4.1,</rating>
 		<count>2</count>
         </extensions>
-		</trkpt>
+      </trkpt>
 	  </trkseg>
   </trk>
 </gpx>
