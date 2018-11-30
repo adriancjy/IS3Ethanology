@@ -30,6 +30,19 @@
 	
 //Document ready
 $(document).ready(function(){
+	
+		var errDesc = document.getElementById("err_description");
+		errDesc.hide;
+	$('#star1').starrr({
+      change: function(e, value){
+        if (value) {
+          $('.your-choice-was').show();
+          $('.choice').text(value + '/5');
+        } else {
+          $('.your-choice-was').hide();
+        }
+      }
+    });
     var modal = document.getElementById('intro');
 
 // Get the button that opens the modal
