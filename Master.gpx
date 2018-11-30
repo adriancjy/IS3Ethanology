@@ -12,6 +12,7 @@
 				<pname>Distrikt, </pname>
 				<desc>Inside you’ll find an intimate venue, boasting a bar with the club’s name lit up in lights a dark colour scheme undercut by green and red neon lights./</desc>
 				<extensions>
+				<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdistriktglasgow.co.uk,</linkdesc>
 					<count>23</count>
 					<rating>3.0,</rating> 
 					<img>Students/Distrikt.png,</img>
@@ -23,6 +24,7 @@
 				<desc>Contemporary city centre pub over 2 floors with a large TV screen and pool table and large beer garden./ </desc>
 				<extensions>    
 					<img>Students/Ark.png,</img>
+					<linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.social-squirrel.com%2Fthearkglasgow,</linkdesc>
 					<rating>4.1,</rating>
 					<type>Students</type>
 				</extensions>
@@ -31,6 +33,7 @@
 				<pname>Variety Bar,</pname>
 				<desc>Appropriately named The Variety Bar on Sauchiehall Street draws in a mixed bag of punters from ammateur musicians to clusters of students to long standing regulars and the after-work pint tippers./ </desc>
 				<extensions>
+				<linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tripadvisor.com.sg%2FAttraction_Review-g186534-d1861571-Reviews-Variety_Bar-Glasgow_Scotland.html,</linkdesc>
 					<rating>4.2,</rating>
 					<img>Students/VarietyBar.png,</img>
 					<type>Students</type>
@@ -42,6 +45,7 @@
 				<pname>The Record Factory,</pname>
 				<desc>The Record Factory is an ambitious fusion of music and revelry in Glasgow. With impeccable acoustics and hip design this West End Dive Bar has fast became the best late night hangout in the West End with a 2am license./</desc>
 				<extensions>
+				<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.recordfactory.co.uk,</linkdesc>
 					<rating>4.2,</rating>
 					<img>SportsBar/RecordFactory.jpg,</img>
 					<type>Sports</type>
@@ -51,6 +55,7 @@
 				<pname>The Brass Monkey,</pname>
 				<desc>Lively pub offering a range of craft beers and wines and cocktails and plus regular TV sports./</desc>
 				<extensions>
+				<linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tripadvisor.com.sg%2FRestaurant_Review-g186534-d3853615-Reviews-The_Brass_Monkey-Glasgow_Scotland.html,</linkdesc>
 					<rating>4.0,</rating>
 					<img>SportsBar/BrassMonkey.jpg,</img>
 					<type>Sports</type>
@@ -60,6 +65,7 @@
 				<pname>Waxy O'Connor's,</pname>
 				<desc>With 3 floors 6 bars and 9 different areas and Waxy's is one of Glasgow's most unique bars. Enjoy great food and great service and live music in amazing surroundings!/</desc>
 				<extensions>
+				 <linkdesc> https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.waxyoconnors.co.uk,</linkdesc>
 					<rating>4.2,</rating>
 					<img>SportsBar/WaxyOConnor.jpg,</img>
 					<type>Sports</type>
@@ -70,6 +76,7 @@
 				<pname>The Beer Cafe,</pname>
 				<desc>European-style bar with global drinks list and pie menu and live music and plus tables on historic square./</desc>
 				<extensions>
+				<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.thebeercafe.com,</linkdesc>
 					<rating>4.2,</rating>
 					<img>LiveMusic/BeerCafe.jpg,</img>
 					<type>LiveMusic</type>
@@ -79,6 +86,7 @@
 				<pname>Nice N Sleazy,</pname>
 				<desc>Open til the early hours seven nights a week Nice N Sleazy is a Sauchiehall Street bar and club that caters to the weird and the wonderful among Glasgow's clubberatti./</desc>
 				<extensions>
+				<linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.nicensleazy.com,</linkdesc>
 					<rating>4.3</rating>
 					<img>LiveMusic/NiceNSleazy.png,</img>	
 					<type>LiveMusic,</type>
@@ -88,6 +96,7 @@
 				<pname>Jinty McGuinty's Irish Bar,</pname>
 				<desc>Pub serving oysters with beer garden and live music from up and coming bands or singers 6 days./</desc>
 				<extensions>
+				<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.jintys.co.uk,</linkdesc>
 					<rating>4.4,</rating>
 					<img>LiveMusic/Jinty.png,</img>
 					<type>LiveMusic</type>
@@ -125,6 +134,7 @@
 				<pname>La Cheetah,</pname>
 				<desc>Regular club nights fill this lively venue with a range of music most Wednesdays to Saturdays./</desc>
 				<extensions>
+				<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Flacheetahclub.co.uk,</linkdesc>
 					<rating>4.0,</rating>
 					<img>FuntimeParty/LaCheetah.jpg,</img>
 					<type>FunTimeParty</type>
@@ -134,6 +144,7 @@
 				<pname>Sub Club,</pname>
 				<desc>Longest running underground dance club in the world./</desc>
 				<extensions>
+				<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsubclub.co.uk,</linkdesc>
 					<rating>4.4,</rating>
 					<img>FuntimeParty/subclub.jpg,</img>
 					<type>FunTimeParty</type>
@@ -144,6 +155,7 @@
 				<pname>Six Degree North, </pname>
 				<desc>Promising to deliver "new tastes with old fashioned service" the latest Six°North venture will feature over 30 taps that flow with top brews./</desc>
 				<extensions>
+				 <linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tripadvisor.com.sg%2FRestaurant_Review-g186534-d10080193-Reviews-Six_Degrees_North-Glasgow_Scotland.html,</linkdesc>
 					<rating>4.5,</rating>
 					<img>EatDrink/SixDegreeNorth.png,</img>
 					<type>EatDrink</type>
@@ -153,6 +165,7 @@
 				<pname>Cubatas, </pname>
 				<desc>Lively stone-walled bar-restaurant serving authentic paella and tapas and other Spanish favourites./</desc>
 				<extensions>
+				<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcubatas.co.uk,</linkdesc>
 					<rating>4.3,</rating>
 					<img>EatDrink/Cubatas.png,</img>
 					<type>EatDrink</type>
@@ -162,17 +175,19 @@
 				<pname>Absurd Bird Glasgow,</pname>
 				<desc>Quirky chicken shop with a large variety of meaty dishes and a great selection of cocktails./</desc>
 				<extensions>
+
 					<rating>4.2,</rating>
 					<img>EatDrink/AbsurdBird.png,</img>
 					<type>EatDrink</type>
 				</extensions>
 			</trkpt>
-
+<linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.absurdbird.com,</linkdesc>
 			<trkpt lat="55.8661" lon="-4.2685">
 				<pname>The Garage,</pname>
 				<desc>Variety of rooms and bars with a huge main dance floor for raucous foam parties and live bands./</desc>
 				<extensions>
 					<rating>3.5,</rating>
+					<linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgarageglasgow.co.uk,</linkdesc>
 					<img>DrinkDance/Garage.png,</img>
 					<type>DrinkDance</type>
 				</extensions>
@@ -182,6 +197,7 @@
 				<pname>Doghouse Merchant City,</pname>
 				<desc>Funky industrial chic-style bar serving Brewdog beers and a list of guest brews and snacky food./</desc>
 				<extensions>
+				<linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tripadvisor.com.sg%2FRestaurant_Review-g186534-d8856177-Reviews-DogHouse_Merchant_City-Glasgow_Scotland.html,</linkdesc>
 					<rating>4.5,</rating>
 					<img>ChillingWithMates/DogHouse.jpg,</img>
 					<type>ChillingWithMates</type>
@@ -191,6 +207,7 @@
 				<pname>McChuills,</pname>
 				<desc>Global craft beers and live bands and a large screen for TV sport and a pool table in a boisterous pub./</desc>
 				<extensions>
+				 <linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tripadvisor.com.sg%2FAttraction_Review-g186534-d9728982-Reviews-McChuills-Glasgow_Scotland.html",</linkdesc>
 					<rating>4.4,</rating>
 					<img>ChillingWithMates/McChuills.jpg,</img>
 					<type>ChillingWithMates</type>
@@ -210,6 +227,7 @@
 				<pname>Horn Please,</pname>
 				<desc>Indian restaurant with a great selection of cocktails./</desc>
 				<extensions>
+				 <linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhornpleaseglasgow.co.uk,</linkdesc>
 					<rating>4.6,</rating>
 					<img>AfterWorkDrinks/HornPlease.jpg,</img>
 					<type>AfterWorkDrinks</type>
@@ -219,6 +237,7 @@
 				<pname>Waxy O'Connor's,</pname>
 				<desc>With 3 floors and 6 bars and 9 different areas Waxy's is one of Glasgow's most unique bars. Enjoy great food, great service and live music in amazing surroundings!/</desc>
 				<extensions>
+				<linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.waxyoconnors.co.uk,</linkdesc>
 					<rating>4.2,</rating>
 					<img>AfterWorkDrinks/WaxyOConnor.jpg,</img>
 					<type>AfterWorkDrinks</type>
