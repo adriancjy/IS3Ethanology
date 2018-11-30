@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Ethanology" version="1.1"
+  xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2017-06-07T12:55:10.000Z</time>
+  </metadata>
+  <trk>
+    <name>Chilling with Mates</name>
+	<trkseg>
+	  <trkpt lat="55.859311" lon="-4.247914">
+		<pname>Doghouse Merchant City,</pname>
+		<desc>Funky industrial chic-style bar serving Brewdog beers and a list of guest brews and snacky food./</desc>
+		<extensions>
+		<rating>4.5,</rating>
+    
+       <img>http://localhost/ChillingWithMates/DogHouse.jpg,</img>
+        </extensions>
+      </trkpt>
+      <trkpt lat="55.8587" lon="-4.242">
+		<pname>McChuills,</pname>
+		<desc>Global craft beers and live bands and a large screen for TV sport and a pool table in a boisterous pub./</desc>
+        <extensions>
+		<rating>4.4,</rating>
+    
+       <img>http://localhost/ChillingWithMates/McChuills.jpg,</img>
+		<count>2</count>
+        </extensions>
+      </trkpt>
+	  </trkseg>
+  </trk>
+</gpx>

@@ -1,8 +1,6 @@
 
 
 
-      
-
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #mapPlace {
@@ -20,13 +18,13 @@
 		  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
 	  }
 	  #panel{
+		  
 		  width:20%;
 		  float: left;
 		  
 	  }
 	  #allBtn{
 		  text-align:center;
-		  
 	  }
 	  
 	  #checkboxDiv{
@@ -78,10 +76,10 @@
 	
 	  
 	  #section1 {
-		height: 52%;
+		height: 300px;
+		opacity : 0.6;
 		  background-image:url("newbg.jpg");
 		  background-size:cover;
-		  position: relative;
 		
 	
 		  
@@ -123,7 +121,7 @@
     font-size: 40px;
     padding: 0 1px;
     cursor: pointer;
-    color: #d9534f;
+    color: #2a6496;
     text-decoration: none; }
 	
 

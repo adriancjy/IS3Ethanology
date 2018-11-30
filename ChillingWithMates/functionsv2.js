@@ -3,15 +3,15 @@
 	var map;
 	var awmarkers = [], cmarkers = [],ddmarkers = [], edmarkers = [], ftmarkers = [], lmmarkers=[], sbmarkers = [], scmarkers = [],markers=[], i;
 	var currmarker;
-	var partyUrl = "GPX/FuntimeParty.gpx";
-	var studUrl = "GPX/Students.gpx";
-	var awUrl = "GPX/AWD.gpx";
-	var masterUrl = "GPX/Master.gpx";
-	var ddUrl = "GPX/DrinkingAndDancing.gpx";
-	var edUrl = "GPX/EatingAndDrinking.gpx";
-	var lmUrl = "GPX/LiveMusic.gpx";
-	var sbUrl = "GPX/SportsBar.gpx";
-	var cUrl = "GPX/ChillingWithMates.gpx";
+	var partyUrl = "FuntimeParty.gpx";
+	var studUrl = "Students.gpx";
+	var awUrl = "AWD.gpx";
+	var masterUrl = "Master.gpx";
+	var ddUrl = "DrinkingAndDancing.gpx";
+	var edUrl = "EatingAndDrinking.gpx";
+	var lmUrl = "LiveMusic.gpx";
+	var sbUrl = "SportsBar.gpx";
+	var cUrl = "ChillingWithMates.gpx";
 	var globalUrl;
 	var awC, cC, ddC, edC, ftC, lmC, sbC, sC = null;
 	var afterwork = document.getElementById("afterwork");
@@ -30,18 +30,6 @@
 	
 //Document ready
 $(document).ready(function(){
-		var errDesc = document.getElementById("err_description");
-		errDesc.hide;
-	$('#star1').starrr({
-      change: function(e, value){
-        if (value) {
-          $('.your-choice-was').show();
-          $('.choice').text(value + '/5');
-        } else {
-          $('.your-choice-was').hide();
-        }
-      }
-    });
     var modal = document.getElementById('intro');
 
 // Get the button that opens the modal
@@ -267,8 +255,6 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
-
 	
 
 			var latArr = [count+1];
@@ -345,7 +331,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 						
@@ -426,7 +412,6 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
 	
 
 			var latArr = [count+1];
@@ -487,7 +472,6 @@ function initMap() {
 				google.maps.event.addListener(marker, 'click', (function(marker, i) {
 					infowindow.close();
 				  return function() {
-					  
 					  var r = Math.max(0, (Math.min(5, ratingArray[i])));
                           var z;
                           var starRating = "";
@@ -503,7 +487,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					infowindow.setContent(html);
@@ -580,8 +564,6 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
-
 	
 
 			var latArr = [count+1];
@@ -657,7 +639,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -735,8 +717,6 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
-
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -811,7 +791,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -889,8 +869,7 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
-
+	
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -965,7 +944,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1043,8 +1022,7 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
-
+	
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -1119,7 +1097,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1197,8 +1175,7 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
-
+	
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -1273,7 +1250,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1351,7 +1328,6 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -1426,7 +1402,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  
@@ -1506,7 +1482,6 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -1580,7 +1555,7 @@ function initMap() {
 															+	"</div></div></a>"
 															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
                               + starRating + "</span><br><br><br><br>" // </div >"
                                                             + "</div > ";
 					  

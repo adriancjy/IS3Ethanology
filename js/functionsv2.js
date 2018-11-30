@@ -3,15 +3,15 @@
 	var map;
 	var awmarkers = [], cmarkers = [],ddmarkers = [], edmarkers = [], ftmarkers = [], lmmarkers=[], sbmarkers = [], scmarkers = [],markers=[], i;
 	var currmarker;
-	var partyUrl = "GPX/FuntimeParty.gpx";
-	var studUrl = "GPX/Students.gpx";
-	var awUrl = "GPX/AWD.gpx";
-	var masterUrl = "GPX/Master.gpx";
-	var ddUrl = "GPX/DrinkingAndDancing.gpx";
-	var edUrl = "GPX/EatingAndDrinking.gpx";
-	var lmUrl = "GPX/LiveMusic.gpx";
-	var sbUrl = "GPX/SportsBar.gpx";
-	var cUrl = "GPX/ChillingWithMates.gpx";
+	var partyUrl = "FuntimeParty.gpx";
+	var studUrl = "Students.gpx";
+	var awUrl = "AWD.gpx";
+	var masterUrl = "Master.gpx";
+	var ddUrl = "DrinkingAndDancing.gpx";
+	var edUrl = "EatingAndDrinking.gpx";
+	var lmUrl = "LiveMusic.gpx";
+	var sbUrl = "SportsBar.gpx";
+	var cUrl = "ChillingWithMates.gpx";
 	var globalUrl;
 	var awC, cC, ddC, edC, ftC, lmC, sbC, sC = null;
 	var afterwork = document.getElementById("afterwork");
@@ -23,25 +23,9 @@
 	var sportsbar = document.getElementById("sportsbar");
 	var students = document.getElementById('students');
 	var routeArr;
-	var siteWidth = 1280;
-	var scale = screen.width /siteWidth
-
-
 	
 //Document ready
 $(document).ready(function(){
-		var errDesc = document.getElementById("err_description");
-		errDesc.hide;
-	$('#star1').starrr({
-      change: function(e, value){
-        if (value) {
-          $('.your-choice-was').show();
-          $('.choice').text(value + '/5');
-        } else {
-          $('.your-choice-was').hide();
-        }
-      }
-    });
     var modal = document.getElementById('intro');
 
 // Get the button that opens the modal
@@ -49,7 +33,7 @@ var btn = document.getElementById("modalBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
+
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
@@ -237,22 +221,17 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			var social = $(xml).find('linkdesc').text();
 			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
 			var ratingArray = [count+1];
-			var socialArray = [count+1];
 			
 	for(var i = 0; i < count; i++){
 		var result = name.split(',');
 		var imgrs = img.split(',');
 		var descrs = description.split('/');
 		var ratingrs = rating.split(',');
-		var socialrs = social.split(',');
-
-		
 		
 		
 		//array.push(result[i]);
@@ -260,15 +239,12 @@ function initMap() {
 		imgArray[i] = imgrs[i];
 		descArray[i] = descrs[i];
 		ratingArray[i] = ratingrs[i];
-		socialArray[i] = socialrs[i];
 		
 	}
 	nameArray.unshift("University of Glasgow");
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
-
 	
 
 			var latArr = [count+1];
@@ -336,22 +312,14 @@ function initMap() {
                           for (z = 0; z < r; z++){
                               starRating += "&#9733;";
                          }
-												 
+					  
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
-															+ "'></img><br><p>"+ descArray[i] + "<br>"
-															+ "<a class='resp-sharing-button__link' href=" + socialArray[i]  + " target='_blank' aria-label='Share on Facebook'>"+
-															+	"<div class='resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large'><div aria-hidden='true' class='resp-sharing-button__icon resp-sharing-button__icon--solid'>"
-															+	"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z'/></svg>"
-															+	"</div></div></a>"
-															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
+                              + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
-                              + starRating + "</span><br><br><br><br>" // </div >"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
-						
-																														
-
-																														
+					  
 					infowindow.setContent(html);
 					infowindow.open(map, marker, html);
 				  }
@@ -396,22 +364,17 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			var social = $(xml).find('linkdesc').text();
 			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
 			var ratingArray = [count+1];
-			var socialArray = [count+1];
 			
 	for(var i = 0; i < count; i++){
 		var result = name.split(',');
 		var imgrs = img.split(',');
 		var descrs = description.split('/');
 		var ratingrs = rating.split(',');
-		var socialrs = social.split(',');
-
-		
 		
 		
 		//array.push(result[i]);
@@ -419,14 +382,12 @@ function initMap() {
 		imgArray[i] = imgrs[i];
 		descArray[i] = descrs[i];
 		ratingArray[i] = ratingrs[i];
-		socialArray[i] = socialrs[i];
 		
 	}
 	nameArray.unshift("University of Glasgow");
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
 	
 
 			var latArr = [count+1];
@@ -487,7 +448,6 @@ function initMap() {
 				google.maps.event.addListener(marker, 'click', (function(marker, i) {
 					infowindow.close();
 				  return function() {
-					  
 					  var r = Math.max(0, (Math.min(5, ratingArray[i])));
                           var z;
                           var starRating = "";
@@ -495,17 +455,13 @@ function initMap() {
                               starRating += "&#9733;";
                          }
 					  
-						 html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
-															+ "'></img><br><p>"+ descArray[i] + "<br>"
-															+ "<a class='resp-sharing-button__link' href=" + socialArray[i]  + " target='_blank' aria-label='Share on Facebook'>"+
-															+	"<div class='resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large'><div aria-hidden='true' class='resp-sharing-button__icon resp-sharing-button__icon--solid'>"
-															+	"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z'/></svg>"
-															+	"</div></div></a>"
-															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
+						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
+                              + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
-                              + starRating + "</span><br><br><br><br>" // </div >"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
+					  
 					infowindow.setContent(html);
 					infowindow.open(map, marker, html);
 				  }
@@ -550,22 +506,17 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			var social = $(xml).find('linkdesc').text();
 			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
 			var ratingArray = [count+1];
-			var socialArray = [count+1];
 			
 	for(var i = 0; i < count; i++){
 		var result = name.split(',');
 		var imgrs = img.split(',');
 		var descrs = description.split('/');
 		var ratingrs = rating.split(',');
-		var socialrs = social.split(',');
-
-		
 		
 		
 		//array.push(result[i]);
@@ -573,15 +524,12 @@ function initMap() {
 		imgArray[i] = imgrs[i];
 		descArray[i] = descrs[i];
 		ratingArray[i] = ratingrs[i];
-		socialArray[i] = socialrs[i];
 		
 	}
 	nameArray.unshift("University of Glasgow");
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
-
 	
 
 			var latArr = [count+1];
@@ -649,16 +597,11 @@ function initMap() {
                               starRating += "&#9733;";
                          }
 					  
-						 html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
-															+ "'></img><br><p>"+ descArray[i] + "<br>"
-															+ "<a class='resp-sharing-button__link' href=" + socialArray[i]  + " target='_blank' aria-label='Share on Facebook'>"+
-															+	"<div class='resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large'><div aria-hidden='true' class='resp-sharing-button__icon resp-sharing-button__icon--solid'>"
-															+	"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z'/></svg>"
-															+	"</div></div></a>"
-															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
+						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
+                              + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
-                              + starRating + "</span><br><br><br><br>" // </div >"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -705,22 +648,17 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			var social = $(xml).find('linkdesc').text();
 			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
 			var ratingArray = [count+1];
-			var socialArray = [count+1];
 			
 	for(var i = 0; i < count; i++){
 		var result = name.split(',');
 		var imgrs = img.split(',');
 		var descrs = description.split('/');
 		var ratingrs = rating.split(',');
-		var socialrs = social.split(',');
-
-		
 		
 		
 		//array.push(result[i]);
@@ -728,15 +666,13 @@ function initMap() {
 		imgArray[i] = imgrs[i];
 		descArray[i] = descrs[i];
 		ratingArray[i] = ratingrs[i];
-		socialArray[i] = socialrs[i];
 		
 	}
 	nameArray.unshift("University of Glasgow");
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
-
+	
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -784,9 +720,12 @@ function initMap() {
 				travelMode: google.maps.TravelMode.WALKING
 			  };
 			  for (i = 0; i < locations.length; i++) {
+				  
+				 
 				var marker = new google.maps.Marker({
-				  position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+				  position: new google.maps.LatLng(locations[i][1], locations[i][2]),				 
 				  				  label: secondlabel + labels[labelIndex++ % labels.length],
+				  
 				  map: map
 				});
 				edmarkers.push(marker);
@@ -804,15 +743,10 @@ function initMap() {
                          }
 					  
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
-															+ "'></img><br><p>"+ descArray[i] + "<br>"
-															+ "<a class='resp-sharing-button__link' href=" + socialArray[i]  + " target='_blank' aria-label='Share on Facebook'>"+
-															+	"<div class='resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large'><div aria-hidden='true' class='resp-sharing-button__icon resp-sharing-button__icon--solid'>"
-															+	"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z'/></svg>"
-															+	"</div></div></a>"
-															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
+                              + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
-                              + starRating + "</span><br><br><br><br>" // </div >"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -859,22 +793,17 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			var social = $(xml).find('linkdesc').text();
 			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
 			var ratingArray = [count+1];
-			var socialArray = [count+1];
 			
 	for(var i = 0; i < count; i++){
 		var result = name.split(',');
 		var imgrs = img.split(',');
 		var descrs = description.split('/');
 		var ratingrs = rating.split(',');
-		var socialrs = social.split(',');
-
-		
 		
 		
 		//array.push(result[i]);
@@ -882,15 +811,13 @@ function initMap() {
 		imgArray[i] = imgrs[i];
 		descArray[i] = descrs[i];
 		ratingArray[i] = ratingrs[i];
-		socialArray[i] = socialrs[i];
 		
 	}
 	nameArray.unshift("University of Glasgow");
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
-
+	
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -957,16 +884,11 @@ function initMap() {
                               starRating += "&#9733;";
                          }
 					  
-						 html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
-															+ "'></img><br><p>"+ descArray[i] + "<br>"
-															+ "<a class='resp-sharing-button__link' href=" + socialArray[i]  + " target='_blank' aria-label='Share on Facebook'>"+
-															+	"<div class='resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large'><div aria-hidden='true' class='resp-sharing-button__icon resp-sharing-button__icon--solid'>"
-															+	"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z'/></svg>"
-															+	"</div></div></a>"
-															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
+						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
+                              + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
-                              + starRating + "</span><br><br><br><br>" // </div >"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -1013,22 +935,17 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			var social = $(xml).find('linkdesc').text();
 			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
 			var ratingArray = [count+1];
-			var socialArray = [count+1];
 			
 	for(var i = 0; i < count; i++){
 		var result = name.split(',');
 		var imgrs = img.split(',');
 		var descrs = description.split('/');
 		var ratingrs = rating.split(',');
-		var socialrs = social.split(',');
-
-		
 		
 		
 		//array.push(result[i]);
@@ -1036,15 +953,13 @@ function initMap() {
 		imgArray[i] = imgrs[i];
 		descArray[i] = descrs[i];
 		ratingArray[i] = ratingrs[i];
-		socialArray[i] = socialrs[i];
 		
 	}
 	nameArray.unshift("University of Glasgow");
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
-
+	
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -1111,16 +1026,11 @@ function initMap() {
                               starRating += "&#9733;";
                          }
 					  
-						   html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
-															+ "'></img><br><p>"+ descArray[i] + "<br>"
-															+ "<a class='resp-sharing-button__link' href=" + socialArray[i]  + " target='_blank' aria-label='Share on Facebook'>"+
-															+	"<div class='resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large'><div aria-hidden='true' class='resp-sharing-button__icon resp-sharing-button__icon--solid'>"
-															+	"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z'/></svg>"
-															+	"</div></div></a>"
-															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
+						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
+                              + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
-                              + starRating + "</span><br><br><br><br>" // </div >"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -1167,22 +1077,18 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			var social = $(xml).find('linkdesc').text();
+			
 			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
 			var ratingArray = [count+1];
-			var socialArray = [count+1];
 			
 	for(var i = 0; i < count; i++){
 		var result = name.split(',');
 		var imgrs = img.split(',');
 		var descrs = description.split('/');
 		var ratingrs = rating.split(',');
-		var socialrs = social.split(',');
-
-		
 		
 		
 		//array.push(result[i]);
@@ -1190,15 +1096,13 @@ function initMap() {
 		imgArray[i] = imgrs[i];
 		descArray[i] = descrs[i];
 		ratingArray[i] = ratingrs[i];
-		socialArray[i] = socialrs[i];
 		
 	}
 	nameArray.unshift("University of Glasgow");
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
-
+	
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -1265,16 +1169,11 @@ function initMap() {
                               starRating += "&#9733;";
                          }
 					  
-						 html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
-															+ "'></img><br><p>"+ descArray[i] + "<br>"
-															+ "<a class='resp-sharing-button__link' href=" + socialArray[i]  + " target='_blank' aria-label='Share on Facebook'>"+
-															+	"<div class='resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large'><div aria-hidden='true' class='resp-sharing-button__icon resp-sharing-button__icon--solid'>"
-															+	"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z'/></svg>"
-															+	"</div></div></a>"
-															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
+						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
+                              + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
-                              + starRating + "</span><br><br><br><br>" // </div >"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -1321,22 +1220,17 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			var social = $(xml).find('linkdesc').text();
 			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
 			var ratingArray = [count+1];
-			var socialArray = [count+1];
 			
 	for(var i = 0; i < count; i++){
 		var result = name.split(',');
 		var imgrs = img.split(',');
 		var descrs = description.split('/');
 		var ratingrs = rating.split(',');
-		var socialrs = social.split(',');
-
-		
 		
 		
 		//array.push(result[i]);
@@ -1344,14 +1238,13 @@ function initMap() {
 		imgArray[i] = imgrs[i];
 		descArray[i] = descrs[i];
 		ratingArray[i] = ratingrs[i];
-		socialArray[i] = socialrs[i];
 		
 	}
 	nameArray.unshift("University of Glasgow");
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
+	
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -1419,15 +1312,10 @@ function initMap() {
                          }
 					  
 						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
-															+ "'></img><br><p>"+ descArray[i] + "<br>"
-															+ "<a class='resp-sharing-button__link' href=" + socialArray[i]  + " target='_blank' aria-label='Share on Facebook'>"+
-															+	"<div class='resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large'><div aria-hidden='true' class='resp-sharing-button__icon resp-sharing-button__icon--solid'>"
-															+	"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z'/></svg>"
-															+	"</div></div></a>"
-															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
+                              + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
-                              + starRating + "</span><br><br><br><br>" // </div >"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -1476,21 +1364,17 @@ function initMap() {
 			var img = $(xml).find('img').text();
 			var description = $(xml).find('desc').text();
 			var rating = $(xml).find('rating').text();
-			var social = $(xml).find('linkdesc').text();
 			
 			var imgArray = [count+1];
 			var nameArray = [count+1];
 			var descArray = [count+1];
 			var ratingArray = [count+1];
-			var socialArray = [count+1];
 			
 	for(var i = 0; i < count; i++){
 		var result = name.split(',');
 		var imgrs = img.split(',');
 		var descrs = description.split('/');
 		var ratingrs = rating.split(',');
-		var socialrs = social.split(',');
-
 		
 		
 		
@@ -1499,14 +1383,16 @@ function initMap() {
 		imgArray[i] = imgrs[i];
 		descArray[i] = descrs[i];
 		ratingArray[i] = ratingrs[i];
-		socialArray[i] = socialrs[i];
+		nameArray[1] = result[1].substring(5, 8);
+		
 		
 	}
 	nameArray.unshift("University of Glasgow");
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
+	
+	
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -1572,16 +1458,11 @@ function initMap() {
                               starRating += "&#9733;";
                          }
 					  
-						   html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
-															+ "'></img><br><p>"+ descArray[i] + "<br>"
-															+ "<a class='resp-sharing-button__link' href=" + socialArray[i]  + " target='_blank' aria-label='Share on Facebook'>"+
-															+	"<div class='resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large'><div aria-hidden='true' class='resp-sharing-button__icon resp-sharing-button__icon--solid'>"
-															+	"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z'/></svg>"
-															+	"</div></div></a>"
-															//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
+						  html = "<div><h3>" + nameArray[i] + "</h3><br><img style='width:200px; height=100px;'src='" + imgArray[i]
+                              + "'></img><br><p>" + descArray[i] + "<br>"//<div style='display: inline-block; width: auto; white - space: nowrap;'>" 
                               + "<span style='font-size: 250%; color: #d3d3d3; position: absolute;'> &#9733;&#9733;&#9733;&#9733;&#9733;</span> "
-                              + "<span style='font-size: 250%; color:#d9534f; white-space: nowrap; position: absolute; width:65px;'>"
-                              + starRating + "</span><br><br><br><br>" // </div >"
+                              + "<span style='font-size: 250%; color:#ffeb27; white-space: nowrap; overflow: hidden;position: absolute; width:65px;'>"
+                              + starRating + "</span><br><br>" // </div >"
                                                             + "</div > ";
 					  
 					infowindow.setContent(html);
@@ -1924,81 +1805,3 @@ function initMap() {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
 		}
-		
-		function updateGPX() {
-    var gpxFile = document.getElementById("inputOptions").value;
-    var inputPlace = document.getElementById("pac-input").value;
-    var inputDescription = document.getElementById("inputDescription").value;
-    var inputRating = document.getElementById("starVal").value;
-	var name;
-	var url;
-	var xmlDoc;
-	if (inputPlace == "" && inputDescription == ""){
-		var errDesc = document.getElementById("err_description");
-		errDesc.innerHTML = "Please fill in the description.";
-		var errInput = document.getElementById("err_input");
-		errInput.innerHTML = "Please fill in the place.";
-		return;
-	}
-	if(inputPlace == ""){
-		var errInput = document.getElementById("err_input");
-		errInput.innerHTML = "Please fill in the place.";
-		return;
-	}
-	if(inputDescription == ""){
-		var errDesc = document.getElementById("err_description");
-		errDesc.innerHTML = "Please fill in the description.";
-		return;
-	}
-	
-	if(gpxFile == "afterworks"){
-		url = awUrl;
-	}
-	else if(gpxFile == "chillingS"){
-		url = cUrl;
-	}
-	else if (gpxFile == "drinkdanceS"){
-		url = ddUrl;
-	}
-	else if (gpxFile == "eatdrinkS"){
-		url = edUrl;
-	}
-	else if (gpxFile == "funtimeS"){
-		url = partyUrl;
-	}
-	else if (gpxFile == "livemusicS"){
-		url = lmUrl;
-	}
-	else if (gpxFile == "sportsbarS"){
-		url = sbUrl;
-	}
-	else if (gpxFile == "studentsS"){
-		url = studUrl;
-	}
-	
-	studUrl = "StudentsV2.gpx";
-	var modal2 = document.getElementById('intro');
-    modal2.style.display = "none";
-	
-
-
-	
-    //var xhttp = new XMLHttpRequest();
-    //xhttp.onreadystatechange = function () {
-		//if (this.readyState == 4 && this.status == 200) {
-        //xmlDoc = this.responseXML;
-		//var xmlDoc2 = $.parseXML(xmlDoc);
-		//var trkseg = xmlDoc.getElementsByTagName
-        //var c = parseInt(xmlDoc.getElementById("count"));
-        //xmlDoc.getElementById("count").innerHTML = ++c;
-		//var qq = xmlDoc.getElementsByTagName("count")[0];
-		//qq.nodeType = "9";
-		//qq.childNodes[0].nodeValue = 6;
-		//console.log(qq.childNodes[0].nodeValue);
-			//}
-    //};
-    //xhttp.open("GET", url, true);
-	
-	//xhttp.send();
-	 
-}
