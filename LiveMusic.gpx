@@ -12,6 +12,10 @@
 		<desc>European-style bar with global drinks list and pie menu and live music and plus tables on historic square./</desc>
 		<extensions>
 		<rating>4.2,</rating>
+
+
+<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.thebeercafe.com,</linkdesc>
+
 		<img>LiveMusic/BeerCafe.jpg,</img>
         </extensions>
       </trkpt>
@@ -19,7 +23,9 @@
 		<pname>Nice N Sleazy,</pname>
 		<desc>Open 'til the early hours seven nights a week Nice 'n' Sleazy is a Sauchiehall Street bar and club that caters to the weird and the wonderful among Glasgow's clubberatti./</desc>
 		<extensions>
-		<rating>4.3,</rating>
+<linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.nicensleazy.com,</linkdesc>
+
+		<rating>4.3,</rating>	
 		<img>LiveMusic/NiceNSleazy.png,</img>
 		<count>3</count>	
         </extensions>
@@ -28,6 +34,9 @@
 		<pname>Jinty McGuinty's Irish Bar,</pname>
 		<desc>Pub serving oysters with beer garden and live music from up and coming bands/singers 6 days./</desc>
 		<extensions>
+
+<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.jintys.co.uk,</linkdesc>
+
 		<rating>4.4,</rating>
 		<img>LiveMusic/Jinty.png,</img>
         </extensions>

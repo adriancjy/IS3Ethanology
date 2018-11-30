@@ -11,6 +11,7 @@
         <pname>Flat 0/1,</pname>
 		<desc>Party bar with resident DJs, decorated in the style of a flat with 1970s decor, a bed and a kitchen./</desc>
 		<extensions>
+    <linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fflat01.co.uk,</linkdesc>
 		<rating>4.2,</rating>
      <img>FuntimeParty/Flat01.jpg,</img>
         </extensions>
@@ -19,6 +20,9 @@
 		<pname>Revolution Glasgow, </pname>
 		<desc>A stylish bar with a penchant for vodka, Revolution is a fun party venue for a night out in Glasgow./</desc>
         <extensions>
+
+<linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tripadvisor.com.sg%2FAttraction_Review-g186534-d5912216-Reviews-Revolution_Renfield_Street_Glasgow-Glasgow_Scotland.html,</linkdesc>
+
 		<rating>4.0,</rating>
     <img>FuntimeParty/RevolutionGlasgow.jpg,</img>
         </extensions>
@@ -27,6 +31,9 @@
 		<pname>Speakeasy,</pname>
 		<desc>Stylized drinking den with booths, homely food, retro tunes and modern takes on classic cocktails./</desc>
 		<extensions>
+
+<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.speakeasyglasgow.co.uk,</linkdesc>
+
 		<rating>4.3,</rating>
     <img>FuntimeParty/Speakeasy.jpg,</img>
         </extensions>
@@ -35,6 +42,10 @@
         <pname>La Cheetah,</pname>
 		<desc>Regular club nights fill this lively venue with a range of music most Wednesdays to Saturdays./</desc>
 		<extensions>
+
+
+<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Flacheetahclub.co.uk,</linkdesc>
+
 		<rating>4.0,</rating>
     <img>FuntimeParty/LaCheetah.jpg,</img>
         </extensions>
@@ -44,6 +55,8 @@
 		<desc>Longest running underground dance club in the world./</desc>
 		<extensions>
 		<count>5</count>
+<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsubclub.co.uk,</linkdesc>
+
 		<rating>4.4,</rating>
     <img>FuntimeParty/subclub.jpg,</img>
         </extensions>

@@ -11,6 +11,7 @@
 		<pname>Six Degree North, </pname>
 		<desc>Promising to deliver "new tastes with old fashioned service" the latest Six°North venture will feature over 30 taps that flow with top brews./</desc>
         <extensions>
+ <linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tripadvisor.com.sg%2FRestaurant_Review-g186534-d10080193-Reviews-Six_Degrees_North-Glasgow_Scotland.html,</linkdesc>
 		<rating>4.5,</rating>
     <img>EatDrink/SixDegreeNorth.png,</img>
         </extensions>
@@ -19,6 +20,7 @@
 		<pname>Cubatas, </pname>
 		<desc>Lively and stone-walled bar-restaurant serving authentic paella, tapas and other Spanish favourites./</desc>
         <extensions>
+<linkdesc>https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcubatas.co.uk,</linkdesc>
 		<rating>4.3,</rating>
     <img>EatDrink/Cubatas.png,</img>
         </extensions>
@@ -27,6 +29,7 @@
 		<pname>Absurd Bird Glasgow,</pname>
 		<desc>Quirky chicken shop with a large variety of meaty dishes and a great selection of cocktails./</desc>
 		<extensions>
+<linkdesc>https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.absurdbird.com,</linkdesc>
 		<rating>4.2,</rating>
     <img>EatDrink/AbsurdBird.png,</img>
 		<count>3</count>
