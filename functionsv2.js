@@ -255,6 +255,8 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
+		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
+
 	
 
 			var latArr = [count+1];
@@ -412,6 +414,7 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
+	socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
 	
 
 			var latArr = [count+1];
@@ -564,6 +567,8 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
+		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
+
 	
 
 			var latArr = [count+1];
@@ -717,6 +722,8 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
+		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
+
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -869,7 +876,8 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	
+		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
+
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -1022,7 +1030,8 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	
+	socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
+
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -1175,7 +1184,8 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
-	
+		socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
+
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -1328,6 +1338,7 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
+	socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
@@ -1482,6 +1493,7 @@ function initMap() {
 	imgArray.unshift("uog.jpg");
 	descArray.unshift("Best school ever");
 	ratingArray.unshift("5.0");
+	socialArray.unshift("https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gla.ac.uk");
 
 			var latArr = [count+1];
 			var lonArr = [count+1];	
