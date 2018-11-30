@@ -1976,7 +1976,7 @@ function initMap() {
 		url = studUrl;
 	}
 	
-	studUrl = "StudentsV2.gpx";
+	studUrl = "GPX/StudentsV2.gpx";
 	var modal2 = document.getElementById('intro');
     modal2.style.display = "none";
 	
